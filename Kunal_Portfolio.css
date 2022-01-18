@@ -1,0 +1,285 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+:root{
+    --primary-color:#0066ff;
+    --black-color:#0E2431;
+    --white-color:#fff;
+
+}
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* navbar styling */
+nav{
+  width:100%;
+  padding:20px;
+}
+nav .navbar{
+  width:90%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:auto;
+}
+nav .navbar .logo a{
+  font-weight: 500;
+  font-size: 35px;
+  color:var(--primary-color);
+}
+nav .navbar .menu a{
+  font-size: 18px;
+  font-weight: 500;
+  color:var(--black-color);
+  padding:6px;
+  
+}
+nav .navbar .menu{
+  display:flex;
+  
+}
+nav .navbar .menu li{
+  list-style: none;
+  margin:8px;
+}
+.navbar .media-icons a{
+  color:var(--primary-color);
+  font-size: 18px;
+  margin:6px;
+}
+
+/* home section styling */
+.home{
+  height:100vh;
+  width:100%;
+}
+.home .home-content{
+  width:90%;
+  height:100%;
+  margin:auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .text-one{
+  font-size:25px;
+  color:var(--black-color);
+}
+.home .text-two{
+  color:var(--black-color);
+  font-size: 75px;
+  font-weight: 600;
+
+}
+.home .text-three{
+  font-size: 40px;
+  margin:5px;
+  color:var(--primary-color);
+}
+.home .text-four{
+  font-size: 23px;
+  margin:5px;
+  color:var(--black-color);
+}
+.home .button{
+  margin:14px 0;
+}
+.home .button button{
+  outline:none;
+  padding:8px;
+  border-radius: 6px;
+  font-size: 25px;
+  font-weight: 400;
+  background:var(--primary-color);
+  color:var(--white-color);
+}
+.home .button button:hover{
+  border-color:var(--primary-color);
+  background-color: var(--white-color);
+  color:var(--primary-color);
+}
+
+/* About Section Styling */
+section{
+  padding-top:20px;
+}
+section .content{
+  width:80%;
+  margin:40px auto;
+  font-family: 'Poppins', sans-serif;
+}
+section .title{
+  display:flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+section .title span{
+  color:var(--black-color);
+  font-size: 30px;
+  font-weight: 600;
+  position:relative;
+  padding-bottom:8px;
+}
+section .title span::before,
+section .title span::after{
+  content:'';
+  position:absolute;
+  height:3px;
+  width:100%;
+  background:var(--primary-color);
+  left:0;
+  bottom:0;
+}
+section .title span::after{
+  bottom:-7px;
+  width:70%;
+  left:50%;
+  transform:translateX(-50%);
+}
+.about .about-details{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.about .about-details .left{
+  width:45%;
+}
+.about .left img{
+  height:400px;
+  width:400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.about .about-details .right{
+  width:55%;
+}
+section .topic{
+  color:var(--black-color);
+  font-size:25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.about-details .right p{
+  text-align: justify;
+  color:var(--black-color);
+}
+section .button{
+  margin:16px 0;
+}
+section .button button{
+  outline:none;
+  padding:8px 16px;
+  border-radius: 4px;
+  font-size: 25px;
+  font-weight: 400;
+  background: var(--primary-color);
+  color:var(--white-color);
+  border:2px solid transparent;
+}
+section .button button:hover{
+  border-color:var(--primary-color);
+  background-color: var(--white-color);
+  color:var(--primary-color);
+}
+
+/* My Skills CSS */
+
+.skills .boxes{
+   display:flex; 
+   flex-wrap: wrap;
+   justify-content:space-between;
+}
+.skills .boxes .box{
+  margin:20px 0;
+  width:calc(100% / 3 - 20px);  
+  text-align: center;
+  border-radius: 12px;
+  padding:30px 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+}
+.skills .boxes .box:hover{
+  background: var(--primary-color);
+  color:var(--white-color);
+}
+.skills .boxes .box .icon{
+  height:50px;
+  width:50px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color:var(--white-color);
+  margin:0 auto 10px auto;
+
+}
+.boxes .box:hover .icon{
+  background:var(--white-color);
+  color:var(--primary-color);
+}
+.skills .boxes .box:hover .topic,
+.skills .boxes .box:hover p{
+  color:var(--white-color);
+}
+
+/* Workflow CSS */
+.workflow .boxes{
+   display:flex; 
+   justify-content:space-between;
+}
+.workflow .boxes .box{
+  margin:20px 0;
+  width:calc(100% / 5 - 20px);  
+  text-align: center;
+  border-radius: 12px;
+  padding:30px 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+}
+.workflow .boxes .box:hover{
+  background: var(--primary-color);
+  color:var(--white-color);
+}
+.workflow .boxes .box .icon{
+  height:50px;
+  width:50px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color:var(--white-color);
+  margin:0 auto 10px auto;
+}
+.boxes .box:hover .icon{
+  background:var(--white-color);
+  color:var(--primary-color);
+}
+.workflow .boxes .box:hover .topic,
+.workflow .boxes .box:hover p{
+  color:var(--white-color);
+}
+
+/* Contact Me CSS */
+.contact{
+  background: #f0f8ff;
+}
+.contact .content{
+  margin:0 auto;
+  padding:30px 0;
+}
+.contact .text{
+  --text-color:#ffffff;
+  width:80%;
+  text-align: center;
+  margin:auto;
+}
+
+
+        
